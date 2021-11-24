@@ -36,7 +36,6 @@ jobs:
       - name: Have GitHub Actions Build Maven Project
         run: |
           git config --global user.name elenaro01
-          cd my-app
           cat pom.xml
           mvn -B release:prepare package --file pom.xml
           cat pom.xml

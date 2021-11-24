@@ -36,10 +36,12 @@ jobs:
       - name: Have GitHub Actions Build Maven Project
         run: |
           git config --global user.name elenaro01
-          cat pom.xml
-          mvn -B release:prepare package --file maven-hello-world/my-app/pom.xml
-          cat pom.xml
-          git push
+          pwd
+          ls -lsart
+          #cat pom.xml
+          #mvn -B release:prepare package --file maven-hello-world/my-app/pom.xml
+          #cat pom.xml
+          #git push
           ls -artl target
           mkdir staging && cp target/my-app*.jar staging
           

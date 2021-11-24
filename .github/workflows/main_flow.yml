@@ -37,7 +37,7 @@ jobs:
         run: |
           git config --global user.name elenaro01
           cat pom.xml
-          mvn -B release:prepare package --file pom.xml
+          mvn -B release:prepare package --file my-app/pom.xml
           cat pom.xml
           git push
           ls -artl target
